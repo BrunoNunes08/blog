@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --amarelo: #ffef82;
+    --azul: #9ed1cf;
+    --dourado: #9d8e25;
+}
+
+/* Cores
+amarelo do header: #FFEF82 com a opacidade por volta de uns 0.8
+section: é branca com opacidade baixa
+article: #9ED1CF
+as letras dos links: #9D8E25
+*/
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    background-image: url(assets/papel-fundo.png);
+}
+
+/* Cabeçalho */
+
+header {
+    background-color: var(--amarelo);
+    display: flex;
+    justify-content: space-between;
+    padding: 13px 20px;
+    align-items: center
+}
+
+.logo {
+    width: 110px;
+}
+
+header > nav {
+    display: flex;
+    gap: 30px;
+}
+
+header a:hover {
+    transform: scale(1.3);
+    transition: .4s;
+}
+
+.redes-sociais{
+    width: 30px;
+}
+
+/* Parte principal */
+
+.section_artigos {
+    width: 80vw;
+    background-color: white;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.section_descricao {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px 0px;
+}
+
+.artigo_descricao{
+    font-size: 22px;
+    background-color: var(--azul);
+    width: 50vw;
+    border-radius: 15px;
+}
+
+.aside_descricao nav {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 22px;
+    text-align: center;
+}
+
+.aside_descricao a {
+    text-decoration: none;
+    color: var(--dourado)
+    
+}
+
+.aside_descricao a:hover {
+    color: black;
+    transform: scale(1.3);
+    transition: transform .4s;
+}
+
+.img-infografico {
+    width: 300px;
+    border-radius: 10px;
+}
+
+.artigo_infografico {
+    padding: 10px;
+    background-color: var(--azul);
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    flex-wrap: wrap;
+}
